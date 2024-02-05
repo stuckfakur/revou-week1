@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: sticky;
+            width: 100%;
+            top: 0%;
+            background-color: black;
+        }
+        header {
+            width: 100%;
+            height: 15em;
+            background-color: greenyellow;
+
+            & section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                font-size: 2rem;
+
+                & p {
+                    padding: 1rem 2rem;
+                }
+
+                & strong {
+                    margin: 0 0.25rem;
+                }
+            }
+        }
+        main section{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        footer{
+            /*position: absolute;*/
+            bottom: 0%;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+        .nav{
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+
+            & a {
+                text-decoration: none;
+                color: white;
+                margin-right: 1rem;
+            }
+
+            & a:hover {
+                color: yellow;
+                font-weight: bold;
+            }
+        }
+        .title-content {
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            background-color: ghostwhite;
+            & > p {
+                font-weight: bold;
+            }
+        }
+        .main-content{
+            width: 100%;
+            max-width: 760px;
+            text-align: center;
+            padding: 2rem 0;
+
+            & p {
+                padding: 1rem 2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+    <div class="nav">
+        <a href="#home">Logo</a>
+        <div class="nav-menu">
+
+            <span><a href="#home">Home</a></span>
+            <span><a href="#about">Main</a></span>
+            <span><a href="#contact">Footer</a></span>
+        </div>
+    </div>
+</nav>
+<header id="home">
+    <section>
+        <p>
+            Some element from lecture <strong>RevoU</strong>
+        </p>
+    </section>
+</header>
+<main>
+    <section>
+        <div class="title-content" id="about">
+            <h2>All Content</h2>
+        </div>
+    </section>
+    <section>
+        <div class="main-content">
+            <p>
+                Yuk simak beberapa element yang berhubungan dengan lecture week 1 day 01 ini
+            </p>
+            <p>
+                mencari apapun yang kamu inginkan dengan <strong>Course RevoU</strong>, dan wujudkan <em></em>
+            </p>
+        </div>
+    </section>
+    <section>
+        <h2>Video Iframe Local</h2>
+        <video src="Cats_1.mp4" width="500"></video>
+    </section>
+    <section>
+        <h2>Video Iframe Youtube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LrFwSg-HMBs?si=hrK0-bTAF9KL54-t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+</main>
+<footer>
+    <section>
+        <div class="title-content" id="contact">
+            <p>This Footer</p>
+        </div>
+
+    </section>
+</footer>
+
+</body>
+</html>
